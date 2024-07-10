@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .upper-menu {
     display: flex;
     flex-wrap: nowrap;
@@ -161,6 +165,10 @@ nav {
     width: 100px;
     height: 24px;
     white-space: nowrap;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .Picture {
@@ -208,6 +216,21 @@ ul {
 
 .upper-menu__divider-hidden2 {
     display: none;
+}
+
+button {
+    background-color: inherit;
+    border: none;
+}
+
+.upper-menu__repair--button {
+    display: flex;
+    flex-direction: row;
+}
+
+.upper-menu__checkstatus--button {
+    display: flex;
+    flex-direction: row;
 }
 @media (min-width:768px){
     .readmore_hidden {

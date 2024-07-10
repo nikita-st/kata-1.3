@@ -9,17 +9,21 @@
 <header class="upper-menu">
     <ul class="upper-menu__mob">
         <li class="upper-menu__burger">
-            <a href="#">
-                <img src="images/burger.svg">
-            </a>
+            <button class="upper-menu__burger-button">
+                <a href="#">
+                    <img src="images/burger.svg">
+                </a>
+            </button>
         </li>
         <li class="upper-menu__divider-hidden">
             <img src="images/divider.svg">              
         </li>
         <li class="upper-menu__group">
-            <a href="#">
-                <img src="images/Group.svg">
-            </a>
+            <button class="upper-menu__group-button">
+                <a href="#">
+                    <img src="images/Group.svg">
+                </a>
+            </button>
         </li>
         <li class="upper-menu__divider">
                 <img src="images/divider.svg">         
@@ -27,38 +31,48 @@
     </ul>
     <ul class="upper-menu__mob-2">
         <li class="upper-menu__call">
-            <a href="#">
-                <img src="images/call.svg">
-            </a>              
+            <button class="upper-menu__call-button">
+                <a href="#">
+                    <img src="images/call.svg">
+                </a>
+            </button>              
         </li>
         <li class="upper-menu__chat">
-            <a href="#">
-                <img src="images/chat.svg">
-            </a>                             
+            <button class="upper-menu__chat-button">
+                <a href="#">
+                    <img src="images/chat.svg">
+                </a>
+            </button>                             
         </li>
         <li class="upper-menu__profile">
-            <a href="#">
-                <img src="images/profile.svg">
-            </a>              
+            <button class="upper-menu__profile-button">
+                <a href="#">
+                    <img src="images/profile.svg">
+                </a>
+            </button>              
         </li>
         <li class="upper-menu__divider-hidden2">
-                <img src="images/divider.svg">            
+            <img src="images/divider.svg">            
         </li>
         <li class="upper-menu__repair">
-            <a href="#">
-                <img src="images/repair.svg">
-            </a>
+            <button class="upper-menu__repair-button">
+                <a href="#">
+                    <img src="images/repair.svg">
+                </a>
+            </button>
         </li>
         <li class="upper-menu__checkstatus">
-            <a href="#">
-                <img src="images/checkstatus.svg">
-            </a>
+            <button class="upper-menu__checkstatus-button">
+                <a href="#">
+                    <img src="images/checkstatus.svg">
+                </a>
+            </button>
         </li>
     </ul>
 </header>
 <body>
-    <ul class="head-title">
-        <li>
+    <div class="head-title">
+        <div>
             <ul class="Title">
                 <li class="Title__highlighter">
                     <img src="images/highlight.svg">               
@@ -67,40 +81,36 @@
                     <h1>Услуги и сервисы</h1>
                 </li>
             </ul>
-        </li>
-        <li>
-            <ul class="Title-help__menu">
-                <li>
+        </div>
+        <div>
+            <div class="Title-help__menu">
+                <button class="upper-menu__repair--button">
                     <a href="#">
                         <p class="upper-menu-text1">Оставить заявку</p>
                     </a>
-                </li>
-                <li class="upper-menu__repair">
-                    <a href="#">
+                    <a class="upper-menu__repair" href="#">
                         <img src="images/repair.svg">
                     </a>
-                </li>
-                <li>
+                </button>
+                <button class="upper-menu__checkstatus--button">
                     <a href="#">
                         <p class="upper-menu-text2">Статус ремонта</p>
                     </a>
-                </li>
-                <li class="upper-menu__checkstatus">
-                    <a href="#">
+                    <a class="upper-menu__checkstatus" href="#">
                         <img src="images/checkstatus.svg">
                     </a>
-                </li>
-            </ul>
-        </li>
-    </ul>
+                </button>
+            </div>
+        </div>
+    </div>
     <nav >
         <ul class="slide-menu">
-            <li><a href="#" class="slide-menu__Button1 slide">Ремонтируемые бренды</a></li>
-            <li><a href="#" class="slide-menu__Button2 slide">Ремонтируемые устройства</a></li>
-            <li><a href="#" class="slide-menu__Button3 slide">Цены на услуги</a></li>
-            <li><a href="#" class="slide-menu__Button4 slide">Адреса сервисных центров</a></li>
-            <li><a href="#" class="slide-menu__Button5 slide">Специальные цены</a></li>
-            <li><a href="#" class="slide-menu__Button6 slide">Отзывы</a></li>
+            <li><a href="#" class="slide-menu__Button slide">Ремонтируемые бренды</a></li>
+            <li><a href="#" class="slide-menu__Button slide">Ремонтируемые устройства</a></li>
+            <li><a href="#" class="slide-menu__Button slide">Цены на услуги</a></li>
+            <li><a href="#" class="slide-menu__Button slide">Адреса сервисных центров</a></li>
+            <li><a href="#" class="slide-menu__Button slide">Специальные цены</a></li>
+            <li><a href="#" class="slide-menu__Button slide">Отзывы</a></li>
         </ul>
     </nav>
     <div class="group">
@@ -108,14 +118,12 @@
             <p class="Read">
                 Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
             </p>
-            <ul class="ReadMore">
-                <li class="ReadMore__svg">
-                    <img src="images/expand.svg">               
-                </li>
-                <li class="ReadMore__Text">
-                    <a href="#">Читать далее</a>
-                </li>
-            </ul>
+            <button class="ReadMore">
+                <a class="ReadMore__Text" href="#">
+                    <img class="ReadMore__svg" src="images/expand.svg">               
+                    <span>Читать далее</span>
+                </a>
+            </button>
         </div>
         <div>
             <img src="images/ec28084f3de98850700667e14dbc02fd.png" class="Picture">
